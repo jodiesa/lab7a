@@ -1,3 +1,4 @@
+pipeline{
 agent {
   docker {
    image 'composer:latest'
@@ -21,5 +22,4 @@ agent {
    junit testResults: 'logs/unitreport.xml'
   }
  }
-}
 }
